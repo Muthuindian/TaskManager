@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#A52727">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_alignTop="@+id/utask"
+        android:layout_toRightOf="@+id/utask"
+        android:layout_toEndOf="@+id/utask"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editutask"
+        android:layout_height="80dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:text="Date:"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/udate"
+        android:gravity="fill_vertical|center_horizontal"
+        android:layout_below="@+id/editutask"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Task Name:"
+        android:layout_height="40dp"
+        android:layout_marginTop="82dp"
+        android:id="@+id/utask"
+        android:gravity="fill_vertical|center_horizontal"
+        android:textSize="18sp"
+        android:layout_width="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff" />
+
+    <Spinner
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/uprior"
+        android:layout_alignLeft="@+id/edittime"
+        android:layout_alignStart="@+id/edittime"
+        android:id="@+id/editprior"
+        android:layout_width="160dp" />
+
+    <EditText
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editudate"
+        android:layout_width="120dp"
+        android:layout_alignTop="@+id/udate"
+        android:layout_alignLeft="@+id/editutask"
+        android:layout_alignStart="@+id/editutask"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edittime"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/editudate"
+        android:layout_alignLeft="@+id/editudate"
+        android:layout_alignStart="@+id/editudate"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:text="Priority:"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/uprior"
+        android:gravity="fill_vertical|center_horizontal"
+        android:layout_below="@+id/utime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ImageButton
+        app:srcCompat="@drawable/calendar_i"
+        android:id="@+id/imagedate"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_below="@+id/editutask"
+        android:layout_toRightOf="@+id/editudate"
+        android:layout_toEndOf="@+id/editudate"
+        android:visibility="visible"
+        android:background="#A52727" />
+
+    <ImageButton
+        app:srcCompat="@drawable/time_i"
+        android:id="@+id/imagetime"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/imagedate"
+        android:layout_alignLeft="@+id/imagedate"
+        android:layout_alignStart="@+id/imagedate"
+        android:visibility="visible"
+        android:background="#A52727" />
+
+    <TextView
+        android:text="Time:"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/utime"
+        android:gravity="fill_vertical|center_horizontal"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/imagetime"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp" />
+
+    <Button
+        android:text="UPDATE"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/addbutton"
+        android:textColor="#000000"
+        android:background="#aaaaaa"
+        android:layout_marginBottom="27dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="55dp" />
+
+    <Button
+        android:text="DELETE"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:background="#aaaaaa"
+        android:textColor="#000000"
+        android:layout_alignBaseline="@+id/addbutton"
+        android:layout_alignBottom="@+id/addbutton"
+        android:layout_toStartOf="@+id/addbutton"
+        android:layout_marginEnd="33dp" />
+</RelativeLayout>
